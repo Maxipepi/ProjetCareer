@@ -1,19 +1,19 @@
 ﻿<!DOCTYPE html>
+<html ng-app>
 <head>
-	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
-	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="lib/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body>
+<body ng-controller="CareerCtrl">
 <div class="container">
 	
 	<div class="row">
 		<div class="col-12" id="a1">
 			<div class="panel">
-				<div class="panel-heading">A1</div>
-				Texte du a1
+				<div class="panel-heading">{{articles.a1.title}}</div>
+				{{articles.a1.text}}
 			</div>
 		</div>
 	</div>
@@ -23,40 +23,40 @@
 	<div class="row hidden-sm">
 		<div class="col-sm-4" id="a3">
 			<div class="panel">
-				<div class="panel-heading">A3</div>
-				Texte du a3
+				<div class="panel-heading">{{articles.a3.title}}</div>
+				{{articles.a3.text}}
 			</div>
 		</div>
 		<div class="col-sm-4" id="a3">
 			<div class="panel">
-				<div class="panel-heading">A3'</div>
-				Texte du a3'
+				<div class="panel-heading">{{articles.a3p.title}}</div>
+				{{articles.a3p.text}}
 			</div>
 		</div>
 		<div class="col-sm-4" id="a3">
 			<div class="panel">
-				<div class="panel-heading">A3'</div>
-				Texte du a3'
+				<div class="panel-heading">{{articles.a3pp.title}}</div>
+				{{articles.a3pp.text}}
 			</div>
 		</div>
 	</div>
 	<div class="row hidden-sm">
 		<div class="col-sm-4" id="a2">
 			<div class="panel">
-				<div class="panel-heading">A2</div>
-				Texte du a2
+				<div class="panel-heading">{{articles.a2.title}}</div>
+				{{articles.a2.text}}
 			</div>
 		</div>
 		<div class="col-sm-4" id="a2">
 			<div class="panel">
-				<div class="panel-heading">A2'</div>
-				Texte du a2'
+				<div class="panel-heading">{{articles.a2p.title}}</div>
+				{{articles.a2p.text}}
 			</div>
 		</div>
 		<div class="col-sm-4" id="a2">
 			<div class="panel">
-				<div class="panel-heading">A2''</div>
-				Texte du a2''
+				<div class="panel-heading">{{articles.a2pp.title}}</div>
+				{{articles.a2pp.text}}
 			</div>
 		</div>
 	</div>
@@ -66,45 +66,48 @@
 	<div class="row visible-sm">
 		<div class="col-6" id="a2">
 			<div class="panel">
-				<div class="panel-heading">A2</div>
-				Texte du a2
+				<div class="panel-heading">{{articles.a2.title}}</div>
+				{{articles.a2.text}}
 			</div>
 		</div>
 		<div class="col-6" id="a3">
 			<div class="panel">
-				<div class="panel-heading">A3</div>
-				Texte du a3
+				<div class="panel-heading">{{articles.a3.title}}</div>
+				{{articles.a3.text}}
 			</div>
 		</div>
 	</div>
 	<div class="row visible-sm">
 		<div class="col-6" id="a2">
 			<div class="panel">
-				<div class="panel-heading">A2'</div>
-				Texte du a2'
+				<div class="panel-heading">{{articles.a2p.title}}</div>
+				{{articles.a2p.text}}
 			</div>
 		</div>
 		<div class="col-6" id="a3">
 			<div class="panel">
-				<div class="panel-heading">A3'</div>
-				Texte du a3'
+				<div class="panel-heading">{{articles.a3p.title}}</div>
+				{{articles.a3p.text}}
 			</div>
 		</div>
 	</div>
 	<div class="row visible-sm">
 		<div class="col-6" id="a2">
 			<div class="panel">
-				<div class="panel-heading">A2''</div>
-				Texte du a2''
+				<div class="panel-heading">{{articles.a2pp.title}}</div>
+				{{articles.a2pp.text}}
 			</div>
 		</div>
 		<div class="col-6" id="a3">
 			<div class="panel">
-				<div class="panel-heading">A3''</div>
-				Texte du a3''
+				<div class="panel-heading">{{articles.a3pp.title}}</div>
+				{{articles.a3pp.text}}
 			</div>
 		</div>
 	</div>
 </div>
+
+<script src="lib/angular/angular.min.js"></script>
+<script src="js/controllers.js"></script>
 </body>
 </html>
